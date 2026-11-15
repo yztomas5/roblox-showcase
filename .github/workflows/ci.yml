@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: CompeyDev/setup-rokit@v0.1.2
+      - name: Format
+        run: stylua --check src tests
+      - name: Lint
+        run: selene src
+      - name: Build
+        run: rojo build default.project.json -o build.rbxl
+      - name: Tests
+        run: lune run tests/run.luau

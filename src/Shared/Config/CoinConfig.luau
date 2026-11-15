@@ -1,0 +1,21 @@
+--!strict
+return {
+	Seed = 20261115,
+	Count = 24,
+	Area = 120,
+	Spacing = 9,
+	Attempts = 40,
+	Height = 3,
+	Value = 5,
+	Reach = 6,
+	MaxSpeed = 32,
+	MaxLag = 0.3,
+	Respawn = 8,
+	Rate = 6,
+	Burst = 4,
+	Size = Vector3.new(2, 2, 0.4),
+	Color = Color3.fromRGB(255, 200, 40),
+	Spin = 3,
+	Pending = 0.6,
+	AttributePrefix = "Taken",
+}
