@@ -1,5 +1,7 @@
 # Roblox showcase
 
+[![CI](https://github.com/yztomas5/roblox-showcase/actions/workflows/ci.yml/badge.svg)](https://github.com/yztomas5/roblox-showcase/actions/workflows/ci.yml)
+
 A small, complete Roblox feature written the way I build production games: a coin field that players walk through
 to collect coins. It is tiny on purpose, so every rule I follow fits in a few files you can read in ten minutes.
 
